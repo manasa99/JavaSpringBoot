@@ -1,7 +1,7 @@
-package com.example.javaspring.controller;
+package com.assignment1.javaspring.controller;
 
-import com.example.javaspring.model.Product;
-import com.example.javaspring.service.ProductService;
+import com.assignment1.javaspring.model.Product;
+import com.assignment1.javaspring.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,6 +36,12 @@ public class ProductController {
     @GetMapping("/products/name")
     public ResponseEntity<List<Product>> getProducts(@RequestParam(required = true) String product){
         List<Product> productList = productService.getProducts(product);
+        return ResponseEntity.ok(productList);
+    }
+
+    @GetMapping("/products/price")
+    public ResponseEntity<List<Product>> getProductsByPrice(@RequestParam(required = true) Double price){
+        List<Product> productList = productService.getProductsByPrice(price);
         return ResponseEntity.ok(productList);
     }
 

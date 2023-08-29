@@ -1,7 +1,6 @@
-package com.example.javaspring.repository;
+package com.assignment1.javaspring.repository;
 
-import com.example.javaspring.entity.ProductEntity;
-import com.example.javaspring.model.Product;
+import com.assignment1.javaspring.entity.ProductEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +10,7 @@ import java.util.List;
 public interface ProductRepository extends JpaRepository<ProductEntity, Long> {
     List<ProductEntity> findByProductContainingIgnoreCase(String product);
     List<ProductEntity> findByProduct(String productName);
+
+    List<ProductEntity> findByPrice(Double price);
 
 }

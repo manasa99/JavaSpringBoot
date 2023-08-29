@@ -1,4 +1,4 @@
-package com.example.javaspring.model;
+package com.assignment1.javaspring.model;
 
 
 import lombok.AllArgsConstructor;

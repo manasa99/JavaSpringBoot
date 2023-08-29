@@ -1,4 +1,4 @@
-package com.example.javaspring;
+package com.assignment1.javaspring;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

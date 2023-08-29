@@ -1,8 +1,8 @@
-package com.example.javaspring.service;
+package com.assignment1.javaspring.service;
 
-import com.example.javaspring.entity.ProductEntity;
-import com.example.javaspring.model.Product;
-import com.example.javaspring.repository.ProductRepository;
+import com.assignment1.javaspring.entity.ProductEntity;
+import com.assignment1.javaspring.model.Product;
+import com.assignment1.javaspring.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +30,13 @@ public class ProductService {
 
     public  List<Product>  getProducts(String product){
         List<ProductEntity> productEntities = new ArrayList<>();
-        if (product == null) productEntities.addAll(productRepository.findAll());
-        else productEntities.addAll(productRepository.findByProductContainingIgnoreCase(product));
+        productEntities.addAll(productRepository.findByProductContainingIgnoreCase(product));
+        return mapEntityToModel(productEntities);
+    }
+
+    public List<Product> getProductsByPrice(Double price){
+        List<ProductEntity> productEntities = new ArrayList<>();
+        productEntities.addAll(productRepository.findByPrice(price));
         return mapEntityToModel(productEntities);
     }
 

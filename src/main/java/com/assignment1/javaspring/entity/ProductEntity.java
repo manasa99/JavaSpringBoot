@@ -1,4 +1,4 @@
-package com.example.javaspring.entity;
+package com.assignment1.javaspring.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
