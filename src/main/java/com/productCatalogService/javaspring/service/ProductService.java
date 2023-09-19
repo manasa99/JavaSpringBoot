@@ -1,8 +1,8 @@
-package com.assignment1.javaspring.service;
+package com.productCatalogService.javaspring.service;
 
-import com.assignment1.javaspring.entity.ProductEntity;
-import com.assignment1.javaspring.model.Product;
-import com.assignment1.javaspring.repository.ProductRepository;
+import com.productCatalogService.javaspring.entity.ProductEntity;
+import com.productCatalogService.javaspring.model.Product;
+import com.productCatalogService.javaspring.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,7 @@
-package com.assignment1.javaspring.controller;
+package com.productCatalogService.javaspring.controller;
 
-import com.assignment1.javaspring.model.Product;
-import com.assignment1.javaspring.service.ProductService;
+import com.productCatalogService.javaspring.model.Product;
+import com.productCatalogService.javaspring.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +16,10 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @GetMapping("/hi")
+    public ResponseEntity<String> greet() {
+        return ResponseEntity.ok("Welcome");
+    }
     @PostMapping("/products")
     public ResponseEntity<Product> createProduct(@RequestBody Product product){
         try{

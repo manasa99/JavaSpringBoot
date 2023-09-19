@@ -1,4 +1,4 @@
-package com.assignment1.javaspring.model;
+package com.productCatalogService.javaspring.model;
 
 
 import lombok.AllArgsConstructor;

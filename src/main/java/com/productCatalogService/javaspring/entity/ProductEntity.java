@@ -1,4 +1,4 @@
-package com.assignment1.javaspring.entity;
+package com.productCatalogService.javaspring.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

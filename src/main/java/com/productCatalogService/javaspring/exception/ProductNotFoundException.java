@@ -4,11 +4,11 @@ import lombok.Data;
 import org.springframework.http.HttpStatus;
 
 @Data
-public class ProductNotFound extends RuntimeException {
+public class ProductNotFoundException extends RuntimeException {
     private String errorMessage;
     private HttpStatus httpStatus;
 
-    public ProductNotFound(String errorMessage, HttpStatus httpStatus) {
+    public ProductNotFoundException(String errorMessage, HttpStatus httpStatus) {
         super(errorMessage);
         this.errorMessage = errorMessage;
         this.httpStatus = httpStatus;
