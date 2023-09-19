@@ -1,4 +1,4 @@
-package com.assignment1.javaspring;
+package com.productCatalogService.javaspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(JavaSpringApplication.class, args);
+        SpringApplication.      run(JavaSpringApplication.class, args);
     }
 
 }
